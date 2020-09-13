@@ -1,0 +1,10 @@
+INSERT INTO "Group"
+VALUES (1,'CS-1905')
+
+INSERT INTO Student
+VALUES (1,'Abat',1,'87081882574')
+
+SELECT "Student".id,"Student".name,"Student".phone
+                    "Student".group_id FROM
+                    "Student" JOIN Group ON "Student".id = "Group".id WHERE
+                    "Group".name = 'CS-1905';
